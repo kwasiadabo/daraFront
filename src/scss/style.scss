@@ -1,0 +1,14 @@
+// If you want to override variables do it here
+@import 'variables';
+$body-bg: rgba(242, 241, 245, 0.959);
+//$color: rgb(3, 0, 0);
+$input-color: rgb(3, 0, 1);
+$input-width: 90%;
+
+//$font-size: 0.08rem;
+
+// Import CoreUI styles
+@import '~@coreui/coreui/scss/coreui.scss';
+
+// If you want to add something do it here
+@import 'custom';

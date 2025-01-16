@@ -1,0 +1,5 @@
+{
+  "apiUrl_": "http://192.168.8.2:12345/api",
+  "apiUrl": "http://localhost:12345/api",
+  "reportUrl": "http://192.168.8.127:8080"
+}

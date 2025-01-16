@@ -1,0 +1,108 @@
+.grey-bg {
+  background-color: #00386c;
+  border-radius: 10px;
+  /*background-color: #f5f7fa;*/
+}
+
+.card {
+  background-color: #fafafa;
+  border-radius: 20px;
+  color: #01579b;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-uppercase {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ptext {
+  color: #1a237e;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.leaveyear {
+  color: #ff1744;
+}
+.requested {
+  color: #ffab00;
+}
+
+.left {
+  color: #00bfa5;
+}
+
+.summaryheadings {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: #d9eef8;
+  background-color: #009688;
+}
+
+.customerheadings {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #d9eef8;
+  background-color: #eaedee;
+}
+
+.figureDisplay {
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  height: 22px;
+  width: 12px;
+  font-size: 0.98rem;
+  font-weight: bold;
+}
+
+.headingtopic {
+  border-color: #ff1744;
+  font-size: 1.98rem;
+}
+
+.loans_bg {
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.collateral_bg {
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+}
+.registration_bg {
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+}
+.expenses_bg {
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.procFee_bg {
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.cashAtHand_bg {
+  width: 100%;
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+}
