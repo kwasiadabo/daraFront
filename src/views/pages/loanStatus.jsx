@@ -69,7 +69,7 @@ import {
 } from '@coreui/react';
 import { now } from 'moment';
 
-const ViewLoanBooking = () => {
+const LoanStatus = () => {
 	const [loanBookings, setLoanBookings] = useState([]);
 	const [details, setDetails] = useState([]);
 	const [render, setRender] = useState(false);
@@ -240,19 +240,7 @@ const ViewLoanBooking = () => {
 											</td>
 
 											<td>{c.nameOfStaff}</td>
-											{/* <td>
-                        <CButton
-                          className="btn-sm"
-                          color="success"
-                          onClick={() =>
-                            openCustomerListAsReport(
-                              reportUrl + '/individualLoanDetails.aspx?' + c.id,
-                            )
-                          }
-                        >
-                          View
-                        </CButton>
-                      </td> */}
+
 											<td>
 												<CDropdown className="m-1">
 													<CDropdownToggle color="info" size="sm">
@@ -303,99 +291,8 @@ const ViewLoanBooking = () => {
 					</CCard>
 				</CCol>
 			</CRow>
-			<CModal
-				className="modal fade col-sm-12"
-				size="lg"
-				show={show}
-				color="info"
-				data-backdrop="static"
-				data-keyboard="false"
-				onClose={() => {
-					setShow(!show);
-				}}
-			>
-				<CModalHeader className="modal-header" closeButton>
-					<div className="row">
-						<div className="col-sm-4 text-left">
-							<h6 className="">Applicant: {null}</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">Bank: {null}</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">Amount Disbursed: {null}</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">
-								Date Disbursed :
-								{/* {moment(selectedLoan.disburseDate).format('DD,MMMM,YYYY')} */}
-							</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">Disbursed By: {null}</h6>
-						</div>
-					</div>
-				</CModalHeader>
-
-				<CModalBody className="modal-body col-sm-12">
-					<h4 className="text-center mb-3">Loan Principal And Purpose</h4>
-					<LoanPrincipal
-						customer={null}
-						disbursementId={null}
-						disbursedAmount={null}
-					/>
-				</CModalBody>
-
-				<CModalFooter></CModalFooter>
-			</CModal>
-
-			<CModal
-				className="modal fade col-sm-12"
-				size="sm"
-				show={status}
-				color="primary"
-				data-backdrop="static"
-				data-keyboard="false"
-				onClose={() => {
-					setShow(!show);
-				}}
-			>
-				<CModalHeader className="modal-header" closeButton>
-					<div className="row">
-						<div className="col-sm-4 text-left">
-							<h6 className="">Applicant: {null}</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">Bank: {null}</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">Amount Disbursed: {null}</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">
-								Date Disbursed :
-								{/* {moment(selectedLoan.disburseDate).format('DD,MMMM,YYYY')} */}
-							</h6>
-						</div>
-						<div className="col-sm-4 text-left">
-							<h6 className="">Disbursed By: {null}</h6>
-						</div>
-					</div>
-				</CModalHeader>
-
-				<CModalBody className="modal-body col-sm-12">
-					<h4 className="text-center mb-3">Loan Principal And Purpose</h4>
-					<LoanPrincipal
-						customer={null}
-						disbursementId={null}
-						disbursedAmount={null}
-					/>
-				</CModalBody>
-
-				<CModalFooter></CModalFooter>
-			</CModal>
 		</div>
 	);
 };
 
-export default ViewLoanBooking;
+export default LoanStatus;

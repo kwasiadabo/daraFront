@@ -40,20 +40,22 @@ const TheSidebar = () => {
 			db: 'Daraplus',
 		});
 	};
-	//console.log(myUser);
+	console.log(myUser);
 
-	useEffect(() => {
-		async function getUserMenus() {
-			const results = await axios.get(
-				apiUrl + '/setup/userroles/menu/' + myUser.role + '/' + myUser.staff
-			);
-			//const userResults = await axios.get(apiUrl + '/setup/useraccess/' + 5);
-			setUserMenus(results.data);
-			//setUserAccessMenus(userResults.data);
-			console.log(results.data);
-		}
-		getUserMenus();
-	}, [myUser.role]);
+	// useEffect(() => {
+	// 	async function getUserMenus() {
+	// 		// const results = await axios.get(
+	// 		// 	apiUrl + '/setup/userroles/menu/' + myUser.userRole + '/' + myUser.staff
+	// 		// );
+	// 		const userResults = await axios.get(
+	// 			apiUrl + '/setup/useraccess/' + myUser.staff
+	// 		);
+	// 		//setUserMenus(results.data);
+	// 		setUserAccessMenus(userResults.data);
+	// 		console.log(userResults.data);
+	// 	}
+	// 	getUserMenus();
+	// }, [myUser.role]);
 
 	setInterval(function () {
 		handleBackup();
@@ -162,21 +164,22 @@ const TheSidebar = () => {
 				<CCreateElement
 					className="items"
 					items={
-						userMenus.length > 0 ? userMenus : adminNav
-						// myUser.userRole == 'Customer Service Officer'
-						// 	? frontDesk
-						// 	: myUser.userRole == 'Supervisor'
-						// 	? supervisor
-						// 	: myUser.userRole == 'Loan Officer'
-						// 	? loanOfficer
-						// 	: myUser.userRole == 'Recovery Officer'
-						// 	? recovery
-						// adminNav
-						//myMenus
-						//userMenus
-						//userAccessMenus
-						//adminNav
+						//userMenus.length > 0 ? userMenus : adminNav
+						myUser.userRole == 'Customer Service Officer'
+							? frontDesk
+							: myUser.userRole == 'Supervisor'
+							? supervisor
+							: myUser.userRole == 'Loan Officer'
+							? loanOfficer
+							: myUser.userRole == 'Recovery Officer'
+							? recovery
+							: adminNav
 					}
+					//myMenus
+					//userMenus
+					//userAccessMenus
+					//adminNav
+
 					components={{
 						CSidebarNavDivider,
 						CSidebarNavDropdown,
